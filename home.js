@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 
 export default function handler(request, response) {
     // Use 308 for a permanent redirect, 307 for a temporary redirect
-    return response.redirect(300, '/home.html');
+    return response.redirect(300, '/Home/home.html');
   }
 
 app.listen(port, () => {
