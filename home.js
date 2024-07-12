@@ -6,10 +6,10 @@ require("dotenv").config();
 const port = process.env.PORT || 8000
 const {readdirSync} = require("fs")
 
-readdirSync("./Routes").map((file)=>app.use("/",require("./Routes"+file)))
+readdirSync("./Routes", "./Home").map((file)=>app.use("/",require("./Routes"+file)))
 
 app.get("/", (req,res) => {
-    res.redirect("register.html");
+    res.render('home');
 })
 
 app.get("/home", home);
