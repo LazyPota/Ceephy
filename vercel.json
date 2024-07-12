@@ -13,13 +13,13 @@
         },
         {
             "rewrites": [
-              { "source": "/profile", "destination": "/html/profile.html" },
+            { "source": "/(.*)", "destination": "/html/home.html" },
+            { "source": "/profile", "destination": "/html/profile.html" },
               { "source": "/comu", "destination": "/html/comu.html" },
               { "source": "/portfolio", "destination": "/html/portfolio.html" },
               { "source": "/jobs", "destination": "/html/jobs.html" },
               { "source": "/setting", "destination": "/html/setting.html" },
-              { "source": "/css/:file", "destination": "/css/:file" },
-              { "source": "/(.*)", "destination": "/html/$1" }
+              { "source": "/css/:file", "destination": "/css/:file" }
             ]
           }
     ]
