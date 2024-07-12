@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
 
-mongoose.connect('https://ceephy.vercel.app/', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('https://data.mongodb-api.com/app/data-rncxokh/endpoint/data/v1', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
   .catch(error => console.error('MongoDB connection error:', error));
 
