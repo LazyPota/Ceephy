@@ -1,28 +1,138 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lowongan Kerja</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- Done Font -->
+    <link rel="stylesheet" href="jobs.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="jobs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CeePhy.Jobs</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo">Cee<span>Phy.</span> </h1>
+      <ul>
+        <li class="hover"><a href="/Home/home.html">Home</a></li>
+        <li class="nonhover"><a href="#">Jobs </i></a>
+
+            <!-- <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Current</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li>
+                    <a href="#">Team <i class="fas fa-caret-right"></i></a>
+                    
+                    <div class="dropdown-menu-1">
+                      <ul>
+                        <li><a href="#">Team-1</a></li>
+                        <li><a href="#">Team-2</a></li>
+                        <li><a href="#">Team-3</a></li>
+                        <li><a href="#">Team-4</a></li>
+                      </ul>
+                    </div>
+                </ul>
+              </div> -->
+        </li>
+        <li class="hover"><a href="/Community/commu.html">Community</a>
+        </li>
+        <li class="hover"><a href="#">Profile <i class="fa-regular fa-user"></i> <i class="fas fa-caret-down"> </i></a>
+
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="/Profile/settings/setting.html">Settings</a></li>
+                  <li><a href="/Profile/portofolio/porto.html">Portfolio</a></li>
+                </ul>
+              </div>
+      </ul>
+    </div>
     <div class="container">
-        <h1>Lowongan Kerja</h1>
-        <div class="job">
-            <h2>Web Developer</h2>
-            <p><strong>Lokasi:</strong> Jakarta</p>
-            <p><strong>Gaji:</strong> Rp 10.000.000/bulan</p>
-            <p><strong>Deskripsi:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet pretium justo.</p>
+        <div class="sidebar">
+            <div class="header">
+                <div class="list-item">
+                    <a href="#"  >
+                        <Img src="/Untitled380_20240712170123.png" alt="" class="icon-che"></img>
+                        <span class="description-header"><p><b>CeePhy</b></p></span>
+                    </a>
+                </div>
+                <br><br><br>
+            </div>
+            <div class="main">
+                <div class="list-item">
+                    <a href="#" class="a-li">
+                        <span class="description" style="text-align: center;">Current Jobs</span>
+                    </a>
+                </div>
+                <div class="nonhover-item" class="list-item">
+                    <a href="#" class="a-li">
+                        <span class="description" style="text-align: center;">Find Jobs</span>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="#" class="a-li">
+                        <span class="description" style="text-align: center;">Find Creators</span>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="#" class="a-li">
+                        <span class="description" style="text-align: center;">Find Teams</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+      
+        <div class="container;loker">
+          <h1>Jobs</h1>
+          <div class="job">
+              <h2>Web Developer</h2>
+              <p><strong>Location:</strong> Jakarta</p>
+              <p><strong>Pay:</strong> Rp 10.000.000/Month</p>
+              <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet pretium justo.</p>
+              <a href="#" class="apply-btn">Apply Now</a>
+          </div>
+          <br>
+          <div class="job">
+              <h2>Graphic Designer</h2>
+              <p><strong>Location:</strong> Surabaya</p>
+              <p><strong>Pay:</strong> Rp 8.000.000/Month</p>
+              <p><strong>Description:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href="#" class="apply-btn">Apply Now</a>
+          </div>
+          <br>
+          <div class="job">
+            <h2>copywritter</h2>
+            <p><strong>Location:</strong> Bekasi</p>
+            <p><strong>Pay:</strong> Rp 5.000.000/Month</p>
+            <p><strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis molestiae, cumque quos numquam ad saepe asperiores voluptatum nemo reiciendis ipsa ut atque fuga eveniet impedit itaque unde qui! Corrupti.</p>
             <a href="#" class="apply-btn">Apply Now</a>
         </div>
-        <div class="job">
-            <h2>Graphic Designer</h2>
-            <p><strong>Lokasi:</strong> Surabaya</p>
-            <p><strong>Gaji:</strong> Rp 8.000.000/bulan</p>
-            <p><strong>Deskripsi:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+    
+    
+    <!-- <h1>JOB REQUEST </h1>
+    <div class="main-content">
+        <div class="search-container">
+            <form form="search" id="form">
+                <input type="search" id="query" name="q" placeholder="Search..." height="30px" width="30px">
+            </form>
         </div>
     </div>
-</body>
+    
+    <div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <center><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fcopywriting_2867276&psig=AOvVaw3Q3fKNDDQvbqDn9OkGYt_y&ust=1720882849270000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCt8KzioYcDFQAAAAAdAAAAABAJ" class="thumbnile"></center>
+            <h3>jobs | hire a copywritter</h3>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quisquam reiciendis id praesentium, dolorum esse cum porro debitis. Adipisci, quisquam iusto esse deserunt consequatur ad quasi expedita commodi voluptatibus eveniet.</P>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    <script src="script.js"></script>
+  </body>
 </html>

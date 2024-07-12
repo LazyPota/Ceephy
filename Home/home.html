@@ -3,19 +3,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-    <link rel="stylesheet" href="tes.css" />
+    <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="/home.js"></script>
-    <title>dropdown Menu</title>
+    <title>CeePhy.home</title>
   </head>
   <body>
     <div class="menu-bar">
       <h1 class="logo">Cee<span>Phy.</span> </h1>
       <ul>
         <li class="nonhover"><a href="#">Home</a></li>
-        <li class="hover"><a href="#">Jobs <i class="fas fa-caret-down"></i></a>
+        <li class="hover"><a href="/Jobs/jobs.html">Jobs</i></a>
 
-            <div class="dropdown-menu">
+            <!-- <div class="dropdown-menu">
                 <ul>
                   <li><a href="#">Current</a></li>
                   <li><a href="#">Portfolio</a></li>
@@ -31,24 +30,63 @@
                       </ul>
                     </div>
                 </ul>
-              </div>
+              </div> -->
         </li>
-        <li class="hover"><a href="#">Community</a>
+        <li class="hover"><a href="/Community/commu.html">Community</a>
         </li>
         <li class="hover"><a href="#">Profile <i class="fa-regular fa-user"></i> <i class="fas fa-caret-down"> </i></a>
 
             <div class="dropdown-menu">
                 <ul>
-                  <li><a href="#">Settings</a></li>
-                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="/Profile/settings/setting.html">Settings</a></li>
+                  <li><a href="/Profile/portofolio/porto.html">Portfolio</a></li>
                 </ul>
               </div>
             
       </ul>
     </div>
+    <header>
+      <h1>Empower Your Career. Connect. Collaborate. Succeed.</h1>
+  </header>
+  
+  <div class="container">
+      <section class="hero">
+        <!-- <img src="data:image/png;base64,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"> -->
+          <h2>Welcome to CheePhy – The Ultimate Community for Developers, Creators, and Industry Professionals!</h2>
+          <p>Are you ready to unlock new opportunities, collaborate on exciting projects, and connect with like-minded individuals? At CeePhy, we believe in the power of community to drive growth and success.</p>
+          <p>Are you a person in this rapid technological growth era,whose heart is filled with desires to create something new,more impactful than anything one could imagine?,but there's no platform that can contain all of your thirsty desires for knowledge to ?
 
-    <div class="hero">
-      &nbsp;
+            How about i tell you there's a website for such a thing?,Introducing CeePhy.
+            
+            A platform built by the community itself,where they realized that a lof of people in the world are not getting the exposure and empowerment they really should've had.
+            
+            With Ceephy you can Create a standout profile to attract opportunities, 
+            
+            Showcase your skills and portfolio
+            
+            Engage in a supportive and respectable community,where all of you can ask and help each others,and maybe can even walk on your dream path together.</p>
+      </section>
+  
+      <section class="about">
+          <h2>Why CeePhy?</h2>
+          <p>Discover a Platform Built for You</p>
+          <p>At Ceepy, we understand that finding the right opportunities and connections can be challenging. That’s why we’ve created a space where you can showcase your skills, find meaningful work, and build valuable relationships in the industry.</p>
+          <h3>Our Mission:</h3>
+          <p>To empower developers, creators, and industry professionals by providing a platform where they can collaborate, grow, and succeed together.</p>
+      </section>
+  </div>
+  
+  <footer>
+      <div class="icon">[Facebook Icon]</div>
+      <div class="icon">[Twitter Icon]</div>
+      <div class="icon">[LinkedIn Icon]</div>
+      <div class="icon">[Instagram Icon]</div>
+      <p>Stay updated with the latest news, opportunities, and community updates.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+      <p>© 2024 CeePhy. All Rights Reserved.</p>
+  </footer>
+    <div>
+
     </div>
- </body>
+  </body>
 </html>

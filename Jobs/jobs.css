@@ -1,47 +1,360 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+.hover  {
+  text-decoration: underline  ;
+  border: 5px;
+  background-color: black;
+}
+.nonhover {
+  border: 5PX;
+  background-color: teal;
+  border-radius: 10px;
+}
+.nonhover-item{
+  border: 5px;
+  background-color: #0073ff;
+  border-radius: 10px;
+  padding: 12px 10px;
+}
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+
+*,html {
+  .ubuntu-regular {
+              font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+      font-style: normal;
+  }
+  
+  .ubuntu-medium {
+              font-family: "Ubuntu", sans-serif;
+          font-weight: 500;
+      font-style: normal;
+  }
+  
+  .ubuntu-bold {
+          font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+  font-style: normal;
+  }
+  
+  padding: 0;
+  margin: 0;
+}
+.ilustration {
+  size: 1PX;
+}
+
+.ilustration-img{
+  height: 70px;
+}
+
+.main-content {
+  background-color:#16213a;
+  flex-grow: 1;
 }
 
 .container {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar{
+  background-color: #111827;
+  width: 185px;
+  padding: 27px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.sidebar  .description-header {
+  font-family: 'Ubuntu';
+  font-style: normal ;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar .header .list-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 10px ;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar .header .list-item .icon{
+  margin-right: 12px;
+}
+
+.sidebar .header .ilustration{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px 22px 0;
+  box-sizing: border-box;
+}
+
+.sidebar .main .list-item .description{
+  font-family: 'Ubuntu';
+  font-style: normal ;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction:column;
+}
+
+.sidebar .main .list-item .icon {
+  margin-right: 12px;
+}
+
+.sidebar .main .list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 10px;
+  width: 130px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.sidebar .main .list-item:hover {
+  background: teal ;
+  transition:  all ease-in-out .2s;
+  -webkit-transition:  all ease-in-out .2s;
+  -moz-transition:  all ease-in-out .2s;
+  -ms-transition:  all ease-in-out .2s;
+  -o-transition:  all ease-in-out .2s;
+}
+
+.icon-che{
+  height: 70px;
+  width: 70px;
+}
+.icon{
+  height: 30px;
+}
+
+.a-li {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+.description {
+  display: flex;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* .main-content .search-container {
+float: right;
+background-color: #e9e9e9;
+}
+
+form{
+width: 300px;
+height: 45px;
+border-radius: 11px;
+display: flex;
+align-items: center;
+}
+
+input {
+all: unset;
+font: 15px;
+color: #000000;
+height: 100%;
+width: 100%;
+padding: 6px 9px;
+}
+
+.thumbnail {
+height: 350px;
+width: 300px;
+border-radius: 20px;
+}
+
+.column {
+float: left;
+width: 50%;
+padding: 10px 10px;
+}
+
+.card {
+border-radius: 19px;
+padding: 15px;
+text-align: center;
+background-color: aqua;
+} */
+
+.container-loker {
+max-width: 800px;
+margin: 20px auto;
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  text-align: center;
-  color: #333;
+text-align: center;
+color: #333;
 }
 
 .job {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+border-bottom: 1px solid #ccc;
+padding-bottom: 20px;
+margin-bottom: 20px;
+margin-left: 20px;
 }
 
 .job h2 {
-  color: #007bff;
+color: #007bff;
 }
 
 .job p {
-  margin: 10px 0;
+margin: 10px 0;
 }
 
 .apply-btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 4px;
+display: inline-block;
+background-color: #007bff;
+color: #fff;
+text-decoration: none;
+padding: 8px 12px;
+border-radius: 4px;
 }
 
 .apply-btn:hover {
-  background-color: #0056b3;
+background-color: #0056b3;
+}
+
+.right {
+color: #007bff;
+
 }
