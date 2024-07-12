@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "home.js",
   "scripts": {
-    "start": "node home.js"
+    "start": "node home.html"
   },
   "author": "",
   "license": "ISC",
