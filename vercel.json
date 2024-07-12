@@ -2,26 +2,15 @@
     "version": 2,
     "builds":[
         {
-            "src":"home.js",
+            "src":"index.js",
             "use":"@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "home.js"
-        },
-        {
-            "rewrites": [
-            { "source": "/(.*)", "destination": "/html/home.html" },
-            { "source": "/profile", "destination": "/html/profile.html" },
-              { "source": "/comu", "destination": "/html/comu.html" },
-              { "source": "/portfolio", "destination": "/html/portfolio.html" },
-              { "source": "/jobs", "destination": "/html/jobs.html" },
-              { "source": "/setting", "destination": "/html/setting.html" },
-              { "source": "/css/:file", "destination": "/css/:file" }
-            ]
-          }
+            "dest": "index.js"
+        }
+        
     ]
-    
 }
