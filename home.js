@@ -6,7 +6,7 @@ const path = require('path');
 
 // sendFile will go here
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '/home.html', '/home.css'));
+    res.sendFile(path.join(__dirname, '/home.html'));
   });
 
 app.listen(port, () => {
