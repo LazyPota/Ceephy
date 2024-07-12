@@ -9,7 +9,3 @@ export default function handler(request, response) {
     // Use 308 for a permanent redirect, 307 for a temporary redirect
     return response.redirect(300, 'home.html');
   }
-
-app.listen(port, () => {
-    console.log(`server is running on port: ${port}`);
-})
