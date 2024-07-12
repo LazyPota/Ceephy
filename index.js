@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"))
-app.use(require('.htmlRoutes/home.js')); 
+app.use(require('htmlRoutes\home.js')); 
 
 app.listen (port, () => {
     console.log(`Server is running on port: $(port)`)
