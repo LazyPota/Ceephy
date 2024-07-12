@@ -1,9 +1,9 @@
 {
   "name": "ceephy-hackathon",
   "version": "1.0.0",
-  "main": "/Home/home.js",
+  "main": "home.js",
   "scripts": {
-    "start": "node /Home/home.js"
+    "start": "node home.js"
   },
   "author": "",
   "license": "ISC",
