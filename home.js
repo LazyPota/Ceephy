@@ -7,8 +7,6 @@ const path = require('path');
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/Public/home.html'));
   });
-  
-app.use(express.static("Public"));
 
 app.listen(port, () => {
     console.log(`Server is running on port: $(port)`);
