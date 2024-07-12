@@ -13,27 +13,27 @@ app.get('/', function(req, res) {
   
 // Profile page route
 app.get('/profile', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'html', 'profile.html'));
+  res.sendFile(path.join(__dirname, 'public', 'html', '/profile.html'));
 });
 
 // Comu page route
 app.get('/comu', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'html', 'comu.html'));
+  res.sendFile(path.join(__dirname, 'public', 'html', '/comu.html'));
 });
 
 // Portfolio page route
 app.get('/portfolio', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'html', 'portfolio.html'));
+  res.sendFile(path.join(__dirname, 'public', 'html', '/portfolio.html'));
 });
 
 // Jobs page route
 app.get('/jobs', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'html', 'jobs.html'));
+  res.sendFile(path.join(__dirname, 'public', 'html', '/jobs.html'));
 });
 
 // Setting page route
 app.get('/setting', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'html', 'setting.html'));
+  res.sendFile(path.join(__dirname, 'public', 'html', '/setting.html'));
 });
 
 
