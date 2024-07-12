@@ -2,14 +2,14 @@
     "version": 2,
     "builds":[
         {
-            "src":"home.js",
+            "src":"/Home/home.js",
             "use":"@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "home.js"
+            "dest": "/Home/home.js"
         }
     ]
 }
