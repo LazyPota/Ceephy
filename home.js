@@ -6,7 +6,7 @@ require("dotenv").config();
 const port = process.env.PORT || 8000
 
 app.get("/", (req, res) => {
-    res.send("home")
+    res.redirect("/Home/home.html")
 })
 
 app.listen(port, () => {
