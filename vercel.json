@@ -2,14 +2,14 @@
     "version": 2,
     "builds":[
         {
-            "src":"Server/Server.js",
+            "src":"home.js",
             "use":"@now/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "register.js"
+            "dest": "home.js"
         }
     ]
 }
