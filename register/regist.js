@@ -1,27 +1,31 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const fs = require('fs');
 
 const app = express();
 app.use(express.json());
 
-mongoose.connect('https://data.mongodb-api.com/app/data-rncxokh/endpoint/data/v1', { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(error => console.error('MongoDB connection error:', error));
-
-const registrationSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  password: String
-});
-
-const Registration = mongoose.model('Registration', registrationSchema);
-
+// Handle registration requests
 app.post('/register', (req, res) => {
   const { name, email, password } = req.body;
 
-  const registration = new Registration({ name, email, password });
+  // Create a new registration object
+  const registration = {
+    name,
+    email,
+    password
+  };
 
-  registration.save()
-    .then(() => res.status(201).json({ message: 'Registration successful' }))
-    .catch(error => res.status(500).json({ error: 'Registration failed' }));
+  // Save the registration object to a file
+  fs.appendFile('registrations.txt', JSON.stringify(registration) + '\n', (err) => {
+    if (err) {
+      console.error('Registration failed:', err);
+      res.status(500).json({ error: 'Registration failed' });
+    } else {
+      console.log('Registration successful');
+      res.status(201).json({ message: 'Registration successful' });
+    }
+  });
 });
+
+// Start the server
+app.listen(3000, () => console.log('Server is running on port 3000'));
