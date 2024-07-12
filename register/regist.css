@@ -1,0 +1,34 @@
+body {
+    background-color: #1e0342;
+}
+
+.content {
+    display: grid;
+    place-content: center;
+    min-height: 90vh;
+    color: white;
+}
+
+.card {
+    border-radius:  15px;
+    padding: 15px;
+    background-color: #0e46a3;
+    bottom: 5px;
+}
+
+button {
+    border: transparent;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: #9ac8cd
+    color: white;
+    box-shadow: 0 0 8px 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:transparent;
+    color: #e1f7f5;
+    transition: 0.3s all ease-in-out;
+}
