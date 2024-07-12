@@ -25,4 +25,3 @@ app.post('/register', (req, res) => {
     .then(() => res.status(201).json({ message: 'Registration successful' }))
     .catch(error => res.status(500).json({ error: 'Registration failed' }));
 });
-app.listen(3000, () => console.log('Server is running on port 3000'));
