@@ -5,7 +5,9 @@ app.use(cors())
 require("dotenv").config();
 const port = process.env.PORT || 8000
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.get("/", (req, res) => {
+    res.send("home")
+})
 
 app.listen(port, () => {
     console.log(`server is running on port: ${port}`);
