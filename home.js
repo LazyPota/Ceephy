@@ -5,13 +5,9 @@ app.use(cors())
 require("dotenv").config();
 const port = process.env.PORT || 8000
 
-app.get("/", (req, res) => {
-    res.redirect("/Home/home.html")
-})
-
 export default function handler(request, response) {
     // Use 308 for a permanent redirect, 307 for a temporary redirect
-    return response.redirect(300, '/Home/home.html');
+    return response.redirect(300, 'home.html');
   }
 
 app.listen(port, () => {
