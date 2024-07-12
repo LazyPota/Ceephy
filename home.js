@@ -7,6 +7,10 @@ const path = require('path');
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/index.html'));
+  });
+  
 // Profile page route
 app.get('/profile', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'html', 'profile.html'));
