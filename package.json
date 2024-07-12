@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "/Home/home.js",
   "scripts": {
-    "start": "node /Home/home.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node /Home/home.js"
   },
   "author": "",
   "license": "ISC",
