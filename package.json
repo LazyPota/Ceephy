@@ -1,7 +1,7 @@
 {
   "name": "ceephy-hackathon",
   "version": "1.0.0",
-  "main": "home.js",
+  "main": "home.html",
   "scripts": {
     "start": "node home.html"
   },
