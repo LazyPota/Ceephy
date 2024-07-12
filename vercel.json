@@ -2,14 +2,14 @@
     "version": 2,
     "builds":[
         {
-            "src":"/register/regist.js",
+            "src":"/register/regist.html",
             "use":"@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/register/regist.js"
+            "dest": "/register/regist.html"
         }
     ]
 }

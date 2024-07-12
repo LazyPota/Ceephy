@@ -1,59 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="regist.css"/>
-    <script src="regist.js"></script>
-    <title>CeePhy.Regist</title>
+  <title>User Registration</title>
 </head>
 <body>
-    <div class="content">
-        <form class="card">
-            <div>
-                <label>Name :</label>
-                <br/>
-                <input type="text" id="name" placeholder="Your Name" required/>
-            </div>
-            <br/>
-            <div>
-                <label>Password :</label>
-                <br/>
-                <input type="text" id="password" placeholder="Password" required/>
-            </div>
-            <br/>
-            <div>
-                <label>Phone :</label>
-                <br/>
-                <input type="number" id="Phone" placeholder="+62" required/>
-            </div>
-            <br/>
-            <div>
-                <label>Email :</label>
-                <br/>
-                <input type="email" id="email" placeholder="Your Email" required/>
-            </div>
-            <br/>
-            <div>
-                <label for="Gender">Gender</label> 
-                <br>
-                <label for="Male">Male</label>
-                <input type="radio" name="Gender" value="Lanang">
-                <label for="Female">Female</label>
-                <input type="radio" name="Gender" value="Wedhok">
-                <label  for="">Don't Show</label>
-                <input type="radio" name="Gender" value="">
-            <br/>
-            <div>
-                <br/>
-                <button input type="reset">Reset</button>
-            </div>
-            <br/>
-            <div>
-                <button input type="submit">Submit</button>
-            </div>
-            </form>
-    </div>
-
+  <h1>User Registration</h1>
+  <form action="/register" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <input type="submit" value="Register">
+  </form>
 </body>
 </html>

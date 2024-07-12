@@ -1,9 +1,9 @@
 {
   "name": "ceephy-hackathon",
   "version": "1.0.0",
-  "main": "/register/regist.js",
+  "main": "/register/regist.html",
   "scripts": {
-    "start": "node /register/regist.js",
+    "start": "node /register/regist.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
