@@ -5,7 +5,7 @@ const port = process.env.PORT || 8000
 
 // sendFile will go here
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'D:\Ceephy Hackathon\home.html'));
+    res.sendFile('home.html'.join(__dirname, '/home.html'));
   });
 
 app.listen(port, () => {
