@@ -1,9 +1,9 @@
 {
   "name": "ceephy-hackathon",
   "version": "1.0.0",
-  "main": "/Home/home.html",
+  "main": "/Home/home.js",
   "scripts": {
-    "start": "node /Home/home.html",
+    "start": "node /Home/home.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
