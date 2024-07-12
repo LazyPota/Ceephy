@@ -5,7 +5,9 @@ app.use(cors())
 require("dotenv").config();
 const port = process.env.PORT || 8000
 
-export default function handler(request, response) {
-    // Use 308 for a permanent redirect, 307 for a temporary redirect
-    return response.redirect(300, 'home.html');
-  }
+// sendFile will go here
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/home.html'));
+  });
+
+  
